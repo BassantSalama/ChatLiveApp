@@ -22,6 +22,7 @@
 		04BB7C562DC8D5EA0031A323 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C552DC8D5EA0031A323 /* FirebaseMessaging */; };
 		04BB7C582DC8D5EA0031A323 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C572DC8D5EA0031A323 /* FirebaseStorage */; };
 		04BB7C6D2DC8F81F0031A323 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C6C2DC8F81F0031A323 /* LoginVC.swift */; };
+		04D04FB02DCA62A00053952E /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D04FAF2DCA62A00053952E /* LoginStoryBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		04BB7C402DC8CEB00031A323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BB7C462DC8D0CC0031A323 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04BB7C6C2DC8F81F0031A323 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		04D04FAF2DCA62A00053952E /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		04BB7C5E2DC8D8D60031A323 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04D04FAE2DCA62750053952E /* StoryBoard */,
 				04BB7C602DC8D8F30031A323 /* ViewController */,
 			);
 			path = Views;
@@ -180,6 +183,14 @@
 			children = (
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		04D04FAE2DCA62750053952E /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				04D04FAF2DCA62A00053952E /* LoginStoryBoard.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 				04BB7C3F2DC8CEB00031A323 /* LaunchScreen.storyboard in Resources */,
 				04BB7C472DC8D0CC0031A323 /* GoogleService-Info.plist in Resources */,
 				04BB7C3C2DC8CEB00031A323 /* Assets.xcassets in Resources */,
+				04D04FB02DCA62A00053952E /* LoginStoryBoard.storyboard in Resources */,
 				04BB7C3A2DC8CEAD0031A323 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
