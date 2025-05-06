@@ -88,7 +88,6 @@
 		04BB7C592DC8D8590031A323 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				04BB7C6E2DC8F94B0031A323 /* Repositories */,
 				04BB7C642DC8F16F0031A323 /* UseCases */,
 			);
 			path = Domain;
@@ -176,13 +175,6 @@
 				04BB7C462DC8D0CC0031A323 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		04BB7C6E2DC8F94B0031A323 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 		04D04FAE2DCA62750053952E /* StoryBoard */ = {
