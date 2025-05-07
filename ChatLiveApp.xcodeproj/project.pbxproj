@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		04BB7C332DC8CEAD0031A323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C322DC8CEAD0031A323 /* AppDelegate.swift */; };
 		04BB7C352DC8CEAD0031A323 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C342DC8CEAD0031A323 /* SceneDelegate.swift */; };
-		04BB7C3A2DC8CEAD0031A323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BB7C382DC8CEAD0031A323 /* Main.storyboard */; };
 		04BB7C3C2DC8CEB00031A323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB7C3B2DC8CEB00031A323 /* Assets.xcassets */; };
 		04BB7C3F2DC8CEB00031A323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BB7C3D2DC8CEB00031A323 /* LaunchScreen.storyboard */; };
 		04BB7C472DC8D0CC0031A323 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BB7C462DC8D0CC0031A323 /* GoogleService-Info.plist */; };
@@ -29,7 +28,6 @@
 		04BB7C2F2DC8CEAD0031A323 /* ChatLiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatLiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BB7C322DC8CEAD0031A323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BB7C342DC8CEAD0031A323 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04BB7C392DC8CEAD0031A323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04BB7C3B2DC8CEB00031A323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BB7C3E2DC8CEB00031A323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BB7C402DC8CEB00031A323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				04BB7C3D2DC8CEB00031A323 /* LaunchScreen.storyboard */,
-				04BB7C382DC8CEAD0031A323 /* Main.storyboard */,
 				04BB7C3B2DC8CEB00031A323 /* Assets.xcassets */,
 				04BB7C342DC8CEAD0031A323 /* SceneDelegate.swift */,
 				04BB7C322DC8CEAD0031A323 /* AppDelegate.swift */,
@@ -260,7 +257,6 @@
 				04BB7C472DC8D0CC0031A323 /* GoogleService-Info.plist in Resources */,
 				04BB7C3C2DC8CEB00031A323 /* Assets.xcassets in Resources */,
 				04D04FB02DCA62A00053952E /* LoginStoryBoard.storyboard in Resources */,
-				04BB7C3A2DC8CEAD0031A323 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,14 +276,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04BB7C382DC8CEAD0031A323 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04BB7C392DC8CEAD0031A323 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04BB7C3D2DC8CEB00031A323 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
