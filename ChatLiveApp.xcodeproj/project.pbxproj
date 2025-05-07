@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042504952DCB643400BD263B /* ForgotPasswordStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042504942DCB643400BD263B /* ForgotPasswordStoryBoard.storyboard */; };
+		042504992DCB64DC00BD263B /* VerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042504982DCB64DC00BD263B /* VerificationVC.swift */; };
+		0425049B2DCB64EE00BD263B /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425049A2DCB64EE00BD263B /* NewPasswordVC.swift */; };
+		0425049D2DCB6FFF00BD263B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425049C2DCB6FFF00BD263B /* ForgotPasswordVC.swift */; };
 		04BB7C332DC8CEAD0031A323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C322DC8CEAD0031A323 /* AppDelegate.swift */; };
 		04BB7C352DC8CEAD0031A323 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C342DC8CEAD0031A323 /* SceneDelegate.swift */; };
 		04BB7C3C2DC8CEB00031A323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB7C3B2DC8CEB00031A323 /* Assets.xcassets */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042504942DCB643400BD263B /* ForgotPasswordStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPasswordStoryBoard.storyboard; sourceTree = "<group>"; };
+		042504982DCB64DC00BD263B /* VerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationVC.swift; sourceTree = "<group>"; };
+		0425049A2DCB64EE00BD263B /* NewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
+		0425049C2DCB6FFF00BD263B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		04BB7C2F2DC8CEAD0031A323 /* ChatLiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatLiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BB7C322DC8CEAD0031A323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BB7C342DC8CEAD0031A323 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +63,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042504902DCB61D200BD263B /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				042504912DCB61E400BD263B /* Views */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		042504912DCB61E400BD263B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				042504932DCB640900BD263B /* StoryBoard */,
+				042504922DCB61F300BD263B /* ViewControllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		042504922DCB61F300BD263B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				042504982DCB64DC00BD263B /* VerificationVC.swift */,
+				0425049A2DCB64EE00BD263B /* NewPasswordVC.swift */,
+				0425049C2DCB6FFF00BD263B /* ForgotPasswordVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		042504932DCB640900BD263B /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				042504942DCB643400BD263B /* ForgotPasswordStoryBoard.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		04BB7C262DC8CEAD0031A323 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +152,7 @@
 		04BB7C5C2DC8D8AD0031A323 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				042504902DCB61D200BD263B /* ForgotPassword */,
 				04BB7C5D2DC8D8B30031A323 /* Login */,
 			);
 			path = Modules;
@@ -253,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042504952DCB643400BD263B /* ForgotPasswordStoryBoard.storyboard in Resources */,
 				04BB7C3F2DC8CEB00031A323 /* LaunchScreen.storyboard in Resources */,
 				04BB7C472DC8D0CC0031A323 /* GoogleService-Info.plist in Resources */,
 				04BB7C3C2DC8CEB00031A323 /* Assets.xcassets in Resources */,
@@ -267,7 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0425049B2DCB64EE00BD263B /* NewPasswordVC.swift in Sources */,
 				04BB7C332DC8CEAD0031A323 /* AppDelegate.swift in Sources */,
+				0425049D2DCB6FFF00BD263B /* ForgotPasswordVC.swift in Sources */,
+				042504992DCB64DC00BD263B /* VerificationVC.swift in Sources */,
 				04BB7C352DC8CEAD0031A323 /* SceneDelegate.swift in Sources */,
 				04BB7C6D2DC8F81F0031A323 /* LoginVC.swift in Sources */,
 			);
@@ -412,7 +460,7 @@
 				INFOPLIST_FILE = ChatLiveApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -442,7 +490,7 @@
 				INFOPLIST_FILE = ChatLiveApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
