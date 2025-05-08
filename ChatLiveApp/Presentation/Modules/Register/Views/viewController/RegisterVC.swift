@@ -3,6 +3,8 @@ import UIKit
 
 class RegisterVC: UIViewController {
 
+    @IBOutlet weak var registerScrollView: UIScrollView!
+    @IBOutlet weak var registerContentView: UIView!
     @IBOutlet weak var registerLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
