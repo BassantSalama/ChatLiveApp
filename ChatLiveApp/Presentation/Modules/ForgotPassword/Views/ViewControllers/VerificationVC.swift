@@ -3,19 +3,19 @@ import UIKit
 
 class VerificationVC: UIViewController {
     
-    @IBOutlet weak var verificationLbl: UILabel!
-    @IBOutlet weak var enterVerificationLbl: UILabel!
-    @IBOutlet weak var verificationTxtField: UITextField!
+    @IBOutlet weak var verificationScrollView: UIScrollView!
+    @IBOutlet weak var verificationContentView: UIView!
+    @IBOutlet weak var verificationLabel: UILabel!
+    @IBOutlet weak var enterVerificationLabel: UILabel!
+    @IBOutlet weak var verificationTextField: UITextField!
     @IBOutlet weak var verifyButton: UIButton!
-    @IBOutlet weak var didnotReciveCodeLbl: UILabel!
-    @IBOutlet weak var resendLbl: UILabel!
+    @IBOutlet weak var didnotReciveCodeLabel: UILabel!
+    @IBOutlet weak var resendLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-    
-
-    
 }

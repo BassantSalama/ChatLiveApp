@@ -1,16 +1,17 @@
 
-
 import UIKit
 
 class NewPasswordVC: UIViewController {
     
-    @IBOutlet weak var newPasswordLbl: UILabel!
-    @IBOutlet weak var enterPasswordLbl: UILabel!
-    @IBOutlet weak var enterPasswordTxtField: UITextField!
-    @IBOutlet weak var confirmPasswordLbl: UILabel!
-    @IBOutlet weak var confirmPasswordTxtField: UITextField!
-    
+    @IBOutlet weak var NewPasswordScrollView: UIScrollView!
+    @IBOutlet weak var NewPasswordContentView: UIView!
+    @IBOutlet weak var newPasswordLabel: UILabel!
+    @IBOutlet weak var enterPasswordLabel: UILabel!
+    @IBOutlet weak var enterPasswordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordLabel: UILabel!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var resetButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,4 @@ class NewPasswordVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    
-
 }
