@@ -162,7 +162,9 @@
                         <outlet property="emailLabel" destination="lIe-fg-bNl" id="N21-AY-cu9"/>
                         <outlet property="emailTextField" destination="dbD-ol-wkB" id="clw-u4-RV3"/>
                         <outlet property="forgetPasswordLabel" destination="OV5-ov-OhZ" id="hMS-pi-0Se"/>
+                        <outlet property="loginContentView" destination="TEq-Ya-kJb" id="8Uf-d6-L2G"/>
                         <outlet property="loginLabel" destination="Psj-69-WeR" id="Qrq-Oe-Zzv"/>
+                        <outlet property="loginScrollView" destination="0N5-Rt-0TR" id="kbk-oj-MoB"/>
                         <outlet property="newUserLabel" destination="pEA-A4-oOp" id="HJS-bo-xBc"/>
                         <outlet property="passwordLabel" destination="sEi-0a-gTK" id="obl-IB-oHi"/>
                         <outlet property="passwordTextField" destination="FqP-2B-Tu5" id="v3X-Aw-sX1"/>

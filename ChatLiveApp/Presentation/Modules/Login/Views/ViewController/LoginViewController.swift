@@ -3,6 +3,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    
+    @IBOutlet weak var loginScrollView: UIScrollView!
+    @IBOutlet weak var loginContentView: UIView!
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
