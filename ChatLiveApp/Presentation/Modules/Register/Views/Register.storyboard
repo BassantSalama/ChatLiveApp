@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--RegisterVC-->
+        <!--Register View Controller-->
         <scene sceneID="FAH-CF-wjC">
             <objects>
-                <viewController storyboardIdentifier="RegisterVC" id="CyA-fG-Rk9" customClass="RegisterVC" customModule="ChatLiveApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="CyA-fG-Rk9" customClass="RegisterViewController" customModule="ChatLiveApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZLX-LH-znN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

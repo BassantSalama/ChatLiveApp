@@ -1,7 +1,7 @@
 
 import UIKit
 
-class VerificationVC: UIViewController {
+class VerificationViewController: UIViewController {
     
     @IBOutlet weak var verificationScrollView: UIScrollView!
     @IBOutlet weak var verificationContentView: UIView!

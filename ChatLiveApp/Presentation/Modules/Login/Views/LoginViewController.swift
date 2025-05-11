@@ -2,7 +2,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!

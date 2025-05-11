@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LoginVC-->
+        <!--Login View Controller-->
         <scene sceneID="Ued-fH-QUj">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="lGb-dM-Hsx" customClass="LoginVC" customModule="ChatLiveApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="lGb-dM-Hsx" customClass="LoginViewController" customModule="ChatLiveApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hA7-by-u90">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,8 +28,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dbD-ol-wkB">
-                                <rect key="frame" x="38" y="270" width="318" height="48"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dbD-ol-wkB">
+                                <rect key="frame" x="38" y="270" width="317" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Tcj-Ky-UFc"/>
                                 </constraints>
@@ -41,11 +41,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FqP-2B-Tu5">
-                                <rect key="frame" x="38" y="373" width="318" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="cMB-Sm-CZl"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FqP-2B-Tu5">
+                                <rect key="frame" x="38" y="373" width="317" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -86,8 +83,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psj-69-WeR">
-                                <rect key="frame" x="152" y="138" width="88" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psj-69-WeR">
+                                <rect key="frame" x="152" y="138" width="89" height="44.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -109,6 +106,7 @@
                             <constraint firstItem="ZTB-c6-W0U" firstAttribute="bottom" secondItem="KIS-Bo-wXC" secondAttribute="bottom" constant="188.33000000000001" id="Tgo-rv-VPd"/>
                             <constraint firstItem="OV5-ov-OhZ" firstAttribute="top" secondItem="FqP-2B-Tu5" secondAttribute="bottom" constant="8.6666666666667425" id="YSi-Ii-NBk"/>
                             <constraint firstItem="dbD-ol-wkB" firstAttribute="leading" secondItem="ZTB-c6-W0U" secondAttribute="leading" constant="38" id="YxC-Jv-ccE"/>
+                            <constraint firstItem="FqP-2B-Tu5" firstAttribute="height" secondItem="dbD-ol-wkB" secondAttribute="height" multiplier="1.02083" id="d2s-dV-mnm"/>
                             <constraint firstItem="dbD-ol-wkB" firstAttribute="top" secondItem="lIe-fg-bNl" secondAttribute="bottom" constant="7" id="fJt-FN-JKq"/>
                             <constraint firstItem="KIS-Bo-wXC" firstAttribute="centerX" secondItem="ZTB-c6-W0U" secondAttribute="centerX" id="gKq-QM-F2X"/>
                             <constraint firstItem="sEi-0a-gTK" firstAttribute="top" secondItem="dbD-ol-wkB" secondAttribute="bottom" constant="19" id="nBG-ue-uic"/>

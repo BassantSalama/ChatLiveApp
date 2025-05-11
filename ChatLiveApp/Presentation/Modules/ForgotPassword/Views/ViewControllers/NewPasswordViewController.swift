@@ -1,7 +1,7 @@
 
 import UIKit
 
-class NewPasswordVC: UIViewController {
+class NewPasswordViewController: UIViewController {
     
     @IBOutlet weak var NewPasswordScrollView: UIScrollView!
     @IBOutlet weak var NewPasswordContentView: UIView!

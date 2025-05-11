@@ -1,7 +1,7 @@
 
 import UIKit
 
-class RegisterVC: UIViewController {
+class RegisterViewController: UIViewController {
 
     @IBOutlet weak var registerScrollView: UIScrollView!
     @IBOutlet weak var registerContentView: UIView!

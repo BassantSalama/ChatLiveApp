@@ -1,7 +1,7 @@
 
 import UIKit
 
-class ForgotPasswordVC: UIViewController {
+class ForgotPasswordViewController: UIViewController {
     
     @IBOutlet weak var forgotPasswordScrollView: UIScrollView!
     @IBOutlet weak var forgotPasswordContetView: UIView!
