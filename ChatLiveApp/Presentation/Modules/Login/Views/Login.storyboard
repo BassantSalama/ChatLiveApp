@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="Ued-fH-QUj">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="lGb-dM-Hsx" customClass="LoginViewController" customModule="ChatLiveApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="lGb-dM-Hsx" customClass="LoginViewController" customModule="ChatLiveApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hA7-by-u90">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
