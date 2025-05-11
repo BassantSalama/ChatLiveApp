@@ -16,6 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIe-fg-bNl">
                                 <rect key="frame" x="38" y="233" width="58.333333333333343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -89,10 +90,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZTB-c6-W0U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+
                             <constraint firstItem="Psj-69-WeR" firstAttribute="top" secondItem="ZTB-c6-W0U" secondAttribute="top" constant="79" id="2Nn-dZ-JQD"/>
                             <constraint firstItem="ZTB-c6-W0U" firstAttribute="trailing" secondItem="OV5-ov-OhZ" secondAttribute="trailing" constant="24" id="8eJ-bh-j7m"/>
                             <constraint firstItem="Psj-69-WeR" firstAttribute="leading" secondItem="ZTB-c6-W0U" secondAttribute="leading" constant="152" id="8k8-4S-LIL"/>
@@ -113,15 +116,18 @@
                             <constraint firstItem="OV5-ov-OhZ" firstAttribute="leading" secondItem="ZTB-c6-W0U" secondAttribute="leading" constant="213" id="pl4-xe-M1z"/>
                             <constraint firstItem="KIS-Bo-wXC" firstAttribute="leading" secondItem="ZTB-c6-W0U" secondAttribute="leading" constant="98" id="pxb-80-dwJ"/>
                             <constraint firstItem="dbD-ol-wkB" firstAttribute="leading" secondItem="lIe-fg-bNl" secondAttribute="leading" id="trC-3r-6Mv"/>
+
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XeV-CD-BCc"/>
                     <connections>
                         <outlet property="emailLabel" destination="lIe-fg-bNl" id="N21-AY-cu9"/>
                         <outlet property="emailTextField" destination="dbD-ol-wkB" id="clw-u4-RV3"/>
+
                         <outlet property="forgetPasswordLbl" destination="OV5-ov-OhZ" id="hMS-pi-0Se"/>
                         <outlet property="loginLabel" destination="Psj-69-WeR" id="Qrq-Oe-Zzv"/>
                         <outlet property="newUserLbl" destination="pEA-A4-oOp" id="HJS-bo-xBc"/>
+
                         <outlet property="passwordLabel" destination="sEi-0a-gTK" id="obl-IB-oHi"/>
                         <outlet property="passwordTextField" destination="FqP-2B-Tu5" id="v3X-Aw-sX1"/>
                         <outlet property="signInButton" destination="LQm-ev-ai1" id="NPa-Pw-mqT"/>
@@ -129,7 +135,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JuM-DX-Fqg" sceneMemberID="firstResponder"/>
             </objects>
+
             <point key="canvasLocation" x="1008.3969465648854" y="-2.1126760563380285"/>
+
         </scene>
     </scenes>
     <resources>
