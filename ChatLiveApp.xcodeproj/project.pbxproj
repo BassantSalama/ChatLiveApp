@@ -21,8 +21,9 @@
 		04BB7C542DC8D5EA0031A323 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C532DC8D5EA0031A323 /* FirebaseFirestoreSwift */; };
 		04BB7C562DC8D5EA0031A323 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C552DC8D5EA0031A323 /* FirebaseMessaging */; };
 		04BB7C582DC8D5EA0031A323 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C572DC8D5EA0031A323 /* FirebaseStorage */; };
-		04BB7C6D2DC8F81F0031A323 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C6C2DC8F81F0031A323 /* LoginVC.swift */; };
-		04D04FB42DCA69AA0053952E /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D04FB32DCA69AA0053952E /* Register.storyboard */; };
+		04BB7C6D2DC8F81F0031A323 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C6C2DC8F81F0031A323 /* LoginViewController.swift */; };
+		04D04FB02DCA62A00053952E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D04FAF2DCA62A00053952E /* Login.storyboard */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +35,9 @@
 		04BB7C3E2DC8CEB00031A323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BB7C402DC8CEB00031A323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BB7C462DC8D0CC0031A323 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		04BB7C6C2DC8F81F0031A323 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		04D04FB32DCA69AA0053952E /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		04BB7C6C2DC8F81F0031A323 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04D04FAF2DCA62A00053952E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		04BB7C5E2DC8D8D60031A323 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04D04FAE2DCA62750053952E /* StoryBoard */,
 				04BB7C602DC8D8F30031A323 /* ViewController */,
 			);
 			path = Views;
@@ -160,7 +163,7 @@
 		04BB7C602DC8D8F30031A323 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				04BB7C6C2DC8F81F0031A323 /* LoginVC.swift */,
+				04BB7C6C2DC8F81F0031A323 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -192,19 +195,11 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		04D04FB12DCA69820053952E /* Views */ = {
+
+		04D04FAE2DCA62750053952E /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				04D04FB22DCA698D0053952E /* StoryBoard */,
-				04A7E2B82DC94260002254F9 /* viewController */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		04D04FB22DCA698D0053952E /* StoryBoard */ = {
-			isa = PBXGroup;
-			children = (
-				04D04FB32DCA69AA0053952E /* Register.storyboard */,
+				04D04FAF2DCA62A00053952E /* Login.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -283,7 +278,8 @@
 				04BB7C3F2DC8CEB00031A323 /* LaunchScreen.storyboard in Resources */,
 				04BB7C472DC8D0CC0031A323 /* GoogleService-Info.plist in Resources */,
 				04BB7C3C2DC8CEB00031A323 /* Assets.xcassets in Resources */,
-				04D04FB42DCA69AA0053952E /* Register.storyboard in Resources */,
+				04D04FB02DCA62A00053952E /* Login.storyboard in Resources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +293,7 @@
 				04BB7C332DC8CEAD0031A323 /* AppDelegate.swift in Sources */,
 				04A7E2BA2DC9428E002254F9 /* RegisterVC.swift in Sources */,
 				04BB7C352DC8CEAD0031A323 /* SceneDelegate.swift in Sources */,
-				04BB7C6D2DC8F81F0031A323 /* LoginVC.swift in Sources */,
+				04BB7C6D2DC8F81F0031A323 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +438,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,7 +468,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
