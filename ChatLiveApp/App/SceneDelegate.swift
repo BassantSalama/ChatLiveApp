@@ -8,11 +8,17 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
     var window: UIWindow?
+    
+    
+   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+           guard let windowScene = (scene as? UIWindowScene) else { return }
 
+           let storyboard = UIStoryboard(name: "Login", bundle: nil)
+           let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
@@ -25,6 +31,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     }
 
+       
+
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
