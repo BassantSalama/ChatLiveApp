@@ -45,7 +45,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have Account? Login In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igi-0I-ddk">
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have Account? Login In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igi-0I-ddk">
                                                         <rect key="frame" x="0.0" y="63.333333333333378" width="178.33333333333334" height="20.333333333333336"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" red="0.1645834857" green="0.52484358249999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -176,11 +176,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="HaveAccontLabel" destination="Igi-0I-ddk" id="aW9-13-vor"/>
                         <outlet property="confirmPasswordLabel" destination="q0K-NC-8eG" id="0fh-ha-4RD"/>
                         <outlet property="confirmPasswordTextField" destination="ItF-ma-Pst" id="cAa-i1-T3L"/>
                         <outlet property="emailLabel" destination="I1l-yy-QJy" id="cGs-fD-mxk"/>
                         <outlet property="emailTextField" destination="zbh-nB-qk0" id="ntD-XN-rSV"/>
+                        <outlet property="haveAccountLabel" destination="Igi-0I-ddk" id="aW9-13-vor"/>
                         <outlet property="passwordLabel" destination="3gN-jd-wUB" id="Y66-Ni-BQX"/>
                         <outlet property="passwordTextField" destination="QCB-hV-Iph" id="E0r-My-ak6"/>
                         <outlet property="registerButton" destination="goy-el-Vnj" id="ex6-WI-VLH"/>
