@@ -6,33 +6,30 @@
 	objectVersion = 56;
 	objects = {
 
+
 /* Begin PBXBuildFile section */
 		042504952DCB643400BD263B /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042504942DCB643400BD263B /* ForgotPassword.storyboard */; };
 		042504992DCB64DC00BD263B /* VerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042504982DCB64DC00BD263B /* VerificationVC.swift */; };
 		0425049B2DCB64EE00BD263B /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425049A2DCB64EE00BD263B /* NewPasswordVC.swift */; };
 		0425049D2DCB6FFF00BD263B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0425049C2DCB6FFF00BD263B /* ForgotPasswordVC.swift */; };
+		04A7E2BA2DC9428E002254F9 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7E2B92DC9428E002254F9 /* RegisterVC.swift */; };
 		04BB7C332DC8CEAD0031A323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C322DC8CEAD0031A323 /* AppDelegate.swift */; };
-		04BB7C352DC8CEAD0031A323 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C342DC8CEAD0031A323 /* SceneDelegate.swift */; };
-		04BB7C3C2DC8CEB00031A323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BB7C3B2DC8CEB00031A323 /* Assets.xcassets */; };
-		04BB7C3F2DC8CEB00031A323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BB7C3D2DC8CEB00031A323 /* LaunchScreen.storyboard */; };
-		04BB7C472DC8D0CC0031A323 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BB7C462DC8D0CC0031A323 /* GoogleService-Info.plist */; };
-		04BB7C4A2DC8D5EA0031A323 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C492DC8D5EA0031A323 /* FirebaseAnalyticsWithoutAdIdSupport */; };
-		04BB7C4C2DC8D5EA0031A323 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C4B2DC8D5EA0031A323 /* FirebaseAuth */; };
-		04BB7C4E2DC8D5EA0031A323 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C4D2DC8D5EA0031A323 /* FirebaseDatabase */; };
-		04BB7C502DC8D5EA0031A323 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C4F2DC8D5EA0031A323 /* FirebaseDatabaseSwift */; };
-		04BB7C522DC8D5EA0031A323 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C512DC8D5EA0031A323 /* FirebaseFirestore */; };
-		04BB7C542DC8D5EA0031A323 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C532DC8D5EA0031A323 /* FirebaseFirestoreSwift */; };
-		04BB7C562DC8D5EA0031A323 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C552DC8D5EA0031A323 /* FirebaseMessaging */; };
-		04BB7C582DC8D5EA0031A323 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C572DC8D5EA0031A323 /* FirebaseStorage */; };
+	
+
+
 		04BB7C6D2DC8F81F0031A323 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C6C2DC8F81F0031A323 /* LoginVC.swift */; };
 		04D04FB02DCA62A00053952E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D04FAF2DCA62A00053952E /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
+
+		04BB7C6D2DC8F81F0031A323 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C6C2DC8F81F0031A323 /* LoginViewController.swift */; };
+		04D04FB02DCA62A00053952E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D04FAF2DCA62A00053952E /* Login.storyboard */; };
+
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		042504942DCB643400BD263B /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
-		042504982DCB64DC00BD263B /* VerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationVC.swift; sourceTree = "<group>"; };
-		0425049A2DCB64EE00BD263B /* NewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
-		0425049C2DCB6FFF00BD263B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		04A7E2B92DC9428E002254F9 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+
 		04BB7C2F2DC8CEAD0031A323 /* ChatLiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatLiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BB7C322DC8CEAD0031A323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BB7C342DC8CEAD0031A323 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +37,11 @@
 		04BB7C3E2DC8CEB00031A323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BB7C402DC8CEB00031A323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BB7C462DC8D0CC0031A323 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		04BB7C6C2DC8F81F0031A323 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+
+		04BB7C6C2DC8F81F0031A323 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04D04FAF2DCA62A00053952E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,31 +63,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		042504902DCB61D200BD263B /* ForgotPassword */ = {
+
+		04A7E2B72DC94255002254F9 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				042504912DCB61E400BD263B /* Views */,
+				04D04FB12DCA69820053952E /* Views */,
 			);
-			path = ForgotPassword;
+			path = Register;
 			sourceTree = "<group>";
 		};
-		042504912DCB61E400BD263B /* Views */ = {
+		04A7E2B82DC94260002254F9 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
-				042504942DCB643400BD263B /* ForgotPassword.storyboard */,
-				042504922DCB61F300BD263B /* ViewControllers */,
+				04A7E2B92DC9428E002254F9 /* RegisterVC.swift */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		042504922DCB61F300BD263B /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				042504982DCB64DC00BD263B /* VerificationVC.swift */,
-				0425049A2DCB64EE00BD263B /* NewPasswordVC.swift */,
-				0425049C2DCB6FFF00BD263B /* ForgotPasswordVC.swift */,
-			);
-			path = ViewControllers;
+			path = viewController;
+
 			sourceTree = "<group>";
 		};
 		04BB7C262DC8CEAD0031A323 = {
@@ -144,7 +135,9 @@
 		04BB7C5C2DC8D8AD0031A323 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				042504902DCB61D200BD263B /* ForgotPassword */,
+
+				04A7E2B72DC94255002254F9 /* Register */,
+
 				04BB7C5D2DC8D8B30031A323 /* Login */,
 			);
 			path = Modules;
@@ -175,6 +168,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+
+		04BB7C602DC8D8F30031A323 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04BB7C6C2DC8F81F0031A323 /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		04BB7C642DC8F16F0031A323 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +204,17 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+
+
+		04D04FAE2DCA62750053952E /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				04D04FAF2DCA62A00053952E /* Login.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,6 +291,9 @@
 				04BB7C472DC8D0CC0031A323 /* GoogleService-Info.plist in Resources */,
 				04BB7C3C2DC8CEB00031A323 /* Assets.xcassets in Resources */,
 				04D04FB02DCA62A00053952E /* Login.storyboard in Resources */,
+
+
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,10 +306,11 @@
 			files = (
 				0425049B2DCB64EE00BD263B /* NewPasswordVC.swift in Sources */,
 				04BB7C332DC8CEAD0031A323 /* AppDelegate.swift in Sources */,
-				0425049D2DCB6FFF00BD263B /* ForgotPasswordVC.swift in Sources */,
-				042504992DCB64DC00BD263B /* VerificationVC.swift in Sources */,
+
+				04A7E2BA2DC9428E002254F9 /* RegisterVC.swift in Sources */,
+
 				04BB7C352DC8CEAD0031A323 /* SceneDelegate.swift in Sources */,
-				04BB7C6D2DC8F81F0031A323 /* LoginVC.swift in Sources */,
+				04BB7C6D2DC8F81F0031A323 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +455,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,7 +485,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
