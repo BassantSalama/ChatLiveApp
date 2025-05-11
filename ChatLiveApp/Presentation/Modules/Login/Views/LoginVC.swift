@@ -4,7 +4,6 @@ import UIKit
 
 class LoginVC: UIViewController {
     
-    
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
