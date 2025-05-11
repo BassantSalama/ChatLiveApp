@@ -13,17 +13,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-    
-        guard let windowScene = (scene as? UIWindowScene) else { return }
+           guard let windowScene = (scene as? UIWindowScene) else { return }
 
-               let storyboard = UIStoryboard(name: "ForgotPassword", bundle: nil)
-               let loginVC = storyboard.instantiateViewController(withIdentifier: "NewPasswordVC") as! NewPasswordVC
+           let storyboard = UIStoryboard(name: "LoginStoryBoard", bundle: nil)
+           let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
 
-               let window = UIWindow(windowScene: windowScene)
-               window.rootViewController = loginVC
-               self.window = window
-               window.makeKeyAndVisible()
-    }
+           let window = UIWindow(windowScene: windowScene)
+           window.rootViewController = loginVC
+           self.window = window
+           window.makeKeyAndVisible()
+
+       }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
