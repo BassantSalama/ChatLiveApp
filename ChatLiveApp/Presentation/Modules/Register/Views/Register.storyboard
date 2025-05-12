@@ -44,6 +44,9 @@
                                                                 <integer key="value" value="8"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="didTapRegisterButton:" destination="CyA-fG-Rk9" eventType="touchUpInside" id="StL-dJ-jKr"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have Account? Login In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igi-0I-ddk">
                                                         <rect key="frame" x="0.0" y="63.333333333333378" width="178.33333333333334" height="20.333333333333336"/>

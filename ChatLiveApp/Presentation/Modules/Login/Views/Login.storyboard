@@ -73,6 +73,9 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInButtonTapped:" destination="lGb-dM-Hsx" eventType="touchUpInside" id="pXz-kR-dzg"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New User? Creat Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-A4-oOp">
                                         <rect key="frame" x="0.3333333333333286" y="68.333333333333371" width="196.33333333333337" height="20.333333333333329"/>

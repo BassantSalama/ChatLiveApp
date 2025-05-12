@@ -2,7 +2,7 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    
     @IBOutlet weak var registerScrollView: UIScrollView!
     @IBOutlet weak var registerContentView: UIView!
     @IBOutlet weak var registerLabel: UILabel!
@@ -15,11 +15,37 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var haveAccountLabel: UILabel!
     
-    private let viewModel = RegisterViewModel(navigator: RegisterNavigationHandler())
+    private let navigationViewModel = RegisterNavigationViewModel(navigator: RegisterNavigationHandler())
+    let viewModel = RegisterViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupBindings()
         setupHaveAccountTap()
+    }
+    
+    func setupBindings() {
+        viewModel.onRegisterSuccess = { [weak self] in
+            DispatchQueue.main.async {
+                self?.navigationViewModel.didFinishRegister(from: self!)
+            }
+        }
+        
+        viewModel.onRegisterFailure = { [weak self] error in
+            DispatchQueue.main.async {
+                let alert = UIAlertController(title: "Register Error", message: error, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                self?.present(alert, animated: true)
+                print("Error: \(error)")
+            }
+        }
+    }
+    
+    @IBAction func didTapRegisterButton(_ sender: Any) {
+            let email = emailTextField.text ?? ""
+            let password = passwordTextField.text ?? ""
+            let confirmPassword = confirmPasswordTextField.text ?? ""
+            viewModel.register(email: email, password: password, confirmPassword: confirmPassword)
     }
     
     private func setupHaveAccountTap() {
@@ -27,9 +53,9 @@ class RegisterViewController: UIViewController {
         haveAccountLabel.isUserInteractionEnabled = true
         haveAccountLabel.addGestureRecognizer(tap)
     }
-
+    
     @objc private func didTapHaveAccount() {
-        viewModel.didTapHaveAccount(from: self)
+        navigationViewModel.didTapHaveAccount(from: self)
     }
     
 }

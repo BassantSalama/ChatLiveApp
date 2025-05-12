@@ -13,13 +13,37 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var newUserLabel: UILabel!
     
-    private let viewModel: LoginViewModel = LoginViewModel(navigator: LoginNavigationHandler())
+    private let navigationViewModel: LoginNavigationViewModel = LoginNavigationViewModel(navigator: LoginNavigationHandler())
+    private let viewModel = LoginViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupBindings()
         setupCreateAccountTap()
         setupForgotPasswordTap()
+    }
+    
+    private func setupBindings() {
+        viewModel.onLoginSuccess = { [weak self] in
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                self.navigationViewModel.didTapSignInButton(from: self)
+            }
+        }
         
+        viewModel.onLoginFailure = { [weak self] error in
+            DispatchQueue.main.async {
+                let alert = UIAlertController(title: "Login Error", message: error, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                self?.present(alert, animated: true)
+            }
+        }
+    }
+    
+    @IBAction func signInButtonTapped(_ sender: Any) {
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        viewModel.login(email: email, password: password)
     }
     
     private func setupCreateAccountTap() {
@@ -35,11 +59,11 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func didTapCreateAccount() {
-        viewModel.didTapCreateAccount(from: self)
+        navigationViewModel.didTapCreateAccount(from: self)
     }
     
     @objc private func didTapForgotPassword() {
-        viewModel.didTapForgotPassword(from: self)
+        navigationViewModel.didTapForgotPassword(from: self)
     }
     
 }
