@@ -1,9 +1,10 @@
 
-
 import UIKit
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var loginScrollView: UIScrollView!
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
@@ -21,7 +22,9 @@ class LoginViewController: UIViewController {
         setupBindings()
         setupCreateAccountTap()
         setupForgotPasswordTap()
+        observeKeyboard(for: loginScrollView)
     }
+    
     
     private func setupBindings() {
         viewModel.onLoginSuccess = { [weak self] in

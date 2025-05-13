@@ -15,6 +15,7 @@
 		040CF1CB2DD23D5100B706B2 /* RegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CF1CA2DD23D5100B706B2 /* RegisterUseCase.swift */; };
 		040CF1CD2DD23DD400B706B2 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CF1CC2DD23DD400B706B2 /* RegisterViewModel.swift */; };
 		040CF1CF2DD275B400B706B2 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CF1CE2DD275B400B706B2 /* ForgotPasswordViewModel.swift */; };
+		04115A352DD3935B0018D317 /* UIViewController+KeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04115A342DD3935B0018D317 /* UIViewController+KeyboardHandling.swift */; };
 		042504952DCB643400BD263B /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0425049B2DCB64EE00BD263B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		042E638C2DD097E800BF11DB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C492DC8D5EA0031A323 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -55,6 +56,7 @@
 		040CF1CA2DD23D5100B706B2 /* RegisterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCase.swift; sourceTree = "<group>"; };
 		040CF1CC2DD23DD400B706B2 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		040CF1CE2DD275B400B706B2 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		04115A342DD3935B0018D317 /* UIViewController+KeyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardHandling.swift"; sourceTree = "<group>"; };
 		042E63982DD09E7000BF11DB /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		042E639A2DD09E7000BF11DB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		042E639F2DD09EA500BF11DB /* ForgotPassword.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 				040CF1C82DD23D2900B706B2 /* RegisterUseCaseProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		04115A332DD393310018D317 /*  UIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				04115A342DD3935B0018D317 /* UIViewController+KeyboardHandling.swift */,
+			);
+			path = " UIExtensions";
 			sourceTree = "<group>";
 		};
 		042E63952DD09E7000BF11DB /* Register */ = {
@@ -284,6 +294,7 @@
 		04BB7C5A2DC8D8780031A323 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				04115A332DD393310018D317 /*  UIExtensions */,
 				04BB7C5C2DC8D8AD0031A323 /* Modules */,
 			);
 			path = Presentation;
@@ -415,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04115A352DD3935B0018D317 /* UIViewController+KeyboardHandling.swift in Sources */,
 				04B765902DD117AA00AEB682 /* LoginNavigationHandler.swift in Sources */,
 				0425049B2DCB64EE00BD263B /* (null) in Sources */,
 				042E63A62DD09EA500BF11DB /* ForgotPasswordViewController.swift in Sources */,
