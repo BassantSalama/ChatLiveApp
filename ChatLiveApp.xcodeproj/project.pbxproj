@@ -19,6 +19,8 @@
 		04115A372DD3DC110018D317 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04115A362DD3DC110018D317 /* ChatTableViewCell.swift */; };
 		0416A14F2DD494FE00DA3430 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0416A14E2DD494FE00DA3430 /* Settings.storyboard */; };
 		0416A1512DD4951D00DA3430 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A1502DD4951D00DA3430 /* SettingsViewController.swift */; };
+		0416A1542DD495B700DA3430 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0416A1532DD495B700DA3430 /* TabBar.storyboard */; };
+		0416A1562DD4976C00DA3430 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A1552DD4976C00DA3430 /* MainTabBarController.swift */; };
 		042504952DCB643400BD263B /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0425049B2DCB64EE00BD263B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		042E638C2DD097E800BF11DB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C492DC8D5EA0031A323 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -63,6 +65,8 @@
 		04115A362DD3DC110018D317 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		0416A14E2DD494FE00DA3430 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		0416A1502DD4951D00DA3430 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0416A1532DD495B700DA3430 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		0416A1552DD4976C00DA3430 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		042E63982DD09E7000BF11DB /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		042E639A2DD09E7000BF11DB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		042E639F2DD09EA500BF11DB /* ForgotPassword.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
@@ -139,6 +143,15 @@
 				0416A1502DD4951D00DA3430 /* SettingsViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0416A1522DD495A000DA3430 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0416A1532DD495B700DA3430 /* TabBar.storyboard */,
+				0416A1552DD4976C00DA3430 /* MainTabBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		042E63952DD09E7000BF11DB /* Register */ = {
@@ -334,6 +347,7 @@
 		04BB7C5C2DC8D8AD0031A323 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0416A1522DD495A000DA3430 /* TabBar */,
 				0416A14C2DD494E000DA3430 /* Settings */,
 				043F3AB52DD156AC00B08049 /* Chats */,
 				042E639D2DD09EA500BF11DB /* ForgotPassword */,
@@ -439,6 +453,7 @@
 				040CF1C52DD22F8E00B706B2 /* Chats.storyboard in Resources */,
 				042504952DCB643400BD263B /* (null) in Resources */,
 				042E63B12DD0A06E00BF11DB /* Login.storyboard in Resources */,
+				0416A1542DD495B700DA3430 /* TabBar.storyboard in Resources */,
 				042E639B2DD09E7000BF11DB /* Register.storyboard in Resources */,
 				042E63B42DD0A75E00BF11DB /* GoogleService-Info.plist in Resources */,
 				0416A14F2DD494FE00DA3430 /* Settings.storyboard in Resources */,
@@ -472,6 +487,7 @@
 				042E639C2DD09E7000BF11DB /* RegisterViewController.swift in Sources */,
 				042E63B52DD0A8D500BF11DB /* SceneDelegate.swift in Sources */,
 				040CF1CD2DD23DD400B706B2 /* RegisterViewModel.swift in Sources */,
+				0416A1562DD4976C00DA3430 /* MainTabBarController.swift in Sources */,
 				040CF1CB2DD23D5100B706B2 /* RegisterUseCase.swift in Sources */,
 				040CF1CF2DD275B400B706B2 /* ForgotPasswordViewModel.swift in Sources */,
 				043F3AB82DD156D700B08049 /* ChatsViewController.swift in Sources */,
