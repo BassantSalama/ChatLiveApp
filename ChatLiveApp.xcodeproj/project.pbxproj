@@ -17,6 +17,8 @@
 		040CF1CF2DD275B400B706B2 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CF1CE2DD275B400B706B2 /* ForgotPasswordViewModel.swift */; };
 		04115A352DD3935B0018D317 /* UIViewController+KeyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04115A342DD3935B0018D317 /* UIViewController+KeyboardHandling.swift */; };
 		04115A372DD3DC110018D317 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04115A362DD3DC110018D317 /* ChatTableViewCell.swift */; };
+		0416A14F2DD494FE00DA3430 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0416A14E2DD494FE00DA3430 /* Settings.storyboard */; };
+		0416A1512DD4951D00DA3430 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416A1502DD4951D00DA3430 /* SettingsViewController.swift */; };
 		042504952DCB643400BD263B /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0425049B2DCB64EE00BD263B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		042E638C2DD097E800BF11DB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB7C492DC8D5EA0031A323 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -46,8 +48,6 @@
 		04B765972DD11A4A00AEB682 /* RegisterNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B765962DD11A4A00AEB682 /* RegisterNavigationViewModel.swift */; };
 		04B7659A2DD11E0400AEB682 /* ForgotPasswordNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B765992DD11E0400AEB682 /* ForgotPasswordNavigationViewModel.swift */; };
 		04BB7C332DC8CEAD0031A323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C322DC8CEAD0031A323 /* AppDelegate.swift */; };
-		04FCC9762DD3FE8B00572573 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCC9752DD3FE8B00572573 /* SettingsViewController.swift */; };
-		04FCC9782DD3FEAD00572573 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FCC9772DD3FEAD00572573 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +61,8 @@
 		040CF1CE2DD275B400B706B2 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		04115A342DD3935B0018D317 /* UIViewController+KeyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardHandling.swift"; sourceTree = "<group>"; };
 		04115A362DD3DC110018D317 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		0416A14E2DD494FE00DA3430 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		0416A1502DD4951D00DA3430 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		042E63982DD09E7000BF11DB /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		042E639A2DD09E7000BF11DB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		042E639F2DD09EA500BF11DB /* ForgotPassword.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
@@ -84,8 +86,6 @@
 		04BB7C3B2DC8CEB00031A323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BB7C3E2DC8CEB00031A323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BB7C402DC8CEB00031A323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04FCC9752DD3FE8B00572573 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		04FCC9772DD3FEAD00572573 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +122,23 @@
 				04115A342DD3935B0018D317 /* UIViewController+KeyboardHandling.swift */,
 			);
 			path = " UIExtensions";
+			sourceTree = "<group>";
+		};
+		0416A14C2DD494E000DA3430 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0416A14D2DD494EB00DA3430 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0416A14D2DD494EB00DA3430 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0416A14E2DD494FE00DA3430 /* Settings.storyboard */,
+				0416A1502DD4951D00DA3430 /* SettingsViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		042E63952DD09E7000BF11DB /* Register */ = {
@@ -317,7 +334,7 @@
 		04BB7C5C2DC8D8AD0031A323 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				04FCC9732DD3FE5500572573 /* Settings */,
+				0416A14C2DD494E000DA3430 /* Settings */,
 				043F3AB52DD156AC00B08049 /* Chats */,
 				042E639D2DD09EA500BF11DB /* ForgotPassword */,
 				042E63952DD09E7000BF11DB /* Register */,
@@ -345,23 +362,6 @@
 				04BB7C322DC8CEAD0031A323 /* AppDelegate.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		04FCC9732DD3FE5500572573 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				04FCC9742DD3FE6100572573 /* Views */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		04FCC9742DD3FE6100572573 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				04FCC9752DD3FE8B00572573 /* SettingsViewController.swift */,
-				04FCC9772DD3FEAD00572573 /* Settings.storyboard */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,7 +441,7 @@
 				042E63B12DD0A06E00BF11DB /* Login.storyboard in Resources */,
 				042E639B2DD09E7000BF11DB /* Register.storyboard in Resources */,
 				042E63B42DD0A75E00BF11DB /* GoogleService-Info.plist in Resources */,
-				04FCC9782DD3FEAD00572573 /* Settings.storyboard in Resources */,
+				0416A14F2DD494FE00DA3430 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +475,7 @@
 				040CF1CB2DD23D5100B706B2 /* RegisterUseCase.swift in Sources */,
 				040CF1CF2DD275B400B706B2 /* ForgotPasswordViewModel.swift in Sources */,
 				043F3AB82DD156D700B08049 /* ChatsViewController.swift in Sources */,
-				04FCC9762DD3FE8B00572573 /* SettingsViewController.swift in Sources */,
+				0416A1512DD4951D00DA3430 /* SettingsViewController.swift in Sources */,
 				040CF1BE2DD22CE400B706B2 /* LoginViewModel.swift in Sources */,
 				04B7658A2DD1171D00AEB682 /* ForgotPasswordNavigating.swift in Sources */,
 			);
