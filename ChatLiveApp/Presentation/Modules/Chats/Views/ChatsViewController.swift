@@ -13,9 +13,8 @@ class ChatsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         chatsTableView.dataSource = self
+        chatsTableView.delegate = self
     }
-    
-    
 }
 extension ChatsViewController: UITableViewDataSource {
     
@@ -33,5 +32,15 @@ extension ChatsViewController: UITableViewDataSource {
         cell.userNameLabel.text = item.username
         cell.lastMassageLabel.text = item.message
         return cell
+    }
+}
+extension ChatsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "ChatRoom", bundle: nil)
+        if let chatRoomVC = storyboard.instantiateViewController(withIdentifier: "ChatRoomViewController") as? ChatRoomViewController {
+            chatRoomVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(chatRoomVC, animated: true)
+        }
+        
     }
 }
