@@ -4,13 +4,24 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var EditButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var signOutButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .systemBlue
+        setupUI()
     }
     
-
     
-
+    private func setupUI() {
+           profileImageView.layer.cornerRadius = profileImageView.frame.width / 2
+         
+       }
+    
+ 
 }

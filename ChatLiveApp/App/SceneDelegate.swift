@@ -14,8 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
            guard let windowScene = (scene as? UIWindowScene) else { return }
 
-       let storyboard = UIStoryboard(name: "Login", bundle: nil)
-           let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+       let storyboard = UIStoryboard(name: "Settings", bundle: nil)
+           let loginVC = storyboard.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
 
            let navigationController = UINavigationController(rootViewController: loginVC)
 
