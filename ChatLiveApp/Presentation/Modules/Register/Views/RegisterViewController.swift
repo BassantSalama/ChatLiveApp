@@ -43,10 +43,10 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func didTapRegisterButton(_ sender: Any) {
-            let email = emailTextField.text ?? ""
-            let password = passwordTextField.text ?? ""
-            let confirmPassword = confirmPasswordTextField.text ?? ""
-            viewModel.register(email: email, password: password, confirmPassword: confirmPassword)
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        let confirmPassword = confirmPasswordTextField.text ?? ""
+        viewModel.register(email: email, password: password, confirmPassword: confirmPassword)
     }
     
     private func setupHaveAccountTap() {

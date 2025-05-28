@@ -35,6 +35,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="chevron.forward.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="sendTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5DO-po-A35"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -51,7 +54,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IwM-hg-59S">
                                 <rect key="frame" x="0.0" y="155" width="393" height="617"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ocy-pc-Vdg">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ocy-pc-Vdg">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -75,7 +78,7 @@
                     <navigationItem key="navigationItem" id="Uid-kW-Pxe"/>
                     <connections>
                         <outlet property="chatRoomCollectionView" destination="IwM-hg-59S" id="tvW-NX-Noi"/>
-                        <outlet property="customInputView" destination="62B-Qh-lUq" id="bhM-n0-UWX"/>
+                        <outlet property="customInputView" destination="62B-Qh-lUq" id="qnJ-zV-h5I"/>
                         <outlet property="inputTextField" destination="Ra5-HU-FVT" id="myQ-7K-14z"/>
                         <outlet property="sendButton" destination="yg7-zd-b4t" id="WXf-AK-HdW"/>
                     </connections>

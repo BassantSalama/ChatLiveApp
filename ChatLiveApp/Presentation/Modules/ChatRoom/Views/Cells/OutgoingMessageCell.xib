@@ -17,10 +17,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view clipsSubviews="YES" contentMode="right" translatesAutoresizingMaskIntoConstraints="NO" id="yoW-AI-Q2c">
-                        <rect key="frame" x="0.0" y="0.0" width="582" height="50"/>
+                        <rect key="frame" x="508.66666666666669" y="0.0" width="57.333333333333314" height="50"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJk-CE-qoP">
-                                <rect key="frame" x="8" y="8" width="566" height="34"/>
+                                <rect key="frame" x="7.9999999999999432" y="8" width="41.333333333333336" height="34"/>
                                 <color key="backgroundColor" red="0.20643889630000001" green="0.61154751129999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,8 +46,8 @@
             <constraints>
                 <constraint firstItem="yoW-AI-Q2c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NNP-uR-A0x"/>
                 <constraint firstAttribute="bottom" secondItem="yoW-AI-Q2c" secondAttribute="bottom" id="NeK-xx-JqL"/>
-                <constraint firstItem="yoW-AI-Q2c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WOq-Fe-Tja"/>
-                <constraint firstAttribute="trailing" secondItem="yoW-AI-Q2c" secondAttribute="trailing" id="cQZ-jW-KUu"/>
+                <constraint firstItem="yoW-AI-Q2c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="60" id="WOq-Fe-Tja"/>
+                <constraint firstAttribute="trailing" secondItem="yoW-AI-Q2c" secondAttribute="trailing" constant="16" id="cQZ-jW-KUu"/>
             </constraints>
             <size key="customSize" width="582" height="50"/>
             <userDefinedRuntimeAttributes>
