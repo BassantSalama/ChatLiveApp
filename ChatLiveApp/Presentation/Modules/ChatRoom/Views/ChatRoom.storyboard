@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f1Q-0X-hWY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat Room View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChatRoomViewController" id="Y6W-OH-hqX" customClass="ChatRoomViewController" customModule="ChatLiveApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62B-Qh-lUq" userLabel="Input View">
+                                <rect key="frame" x="0.0" y="772" width="393" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="n9M-Bw-cXL">
+                                        <rect key="frame" x="14" y="7" width="372" height="43"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ra5-HU-FVT">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg7-zd-b4t">
+                                                <rect key="frame" x="337" y="0.0" width="35" height="34.333333333333336"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="MN5-Mc-ohw"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="chevron.forward.circle.fill" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="n9M-Bw-cXL" secondAttribute="bottom" constant="30" id="5R9-KJ-y1I"/>
+                                    <constraint firstItem="n9M-Bw-cXL" firstAttribute="leading" secondItem="62B-Qh-lUq" secondAttribute="leading" constant="14" id="EY6-i0-68P"/>
+                                    <constraint firstItem="n9M-Bw-cXL" firstAttribute="top" secondItem="62B-Qh-lUq" secondAttribute="top" constant="7" id="G6c-BX-acb"/>
+                                    <constraint firstAttribute="height" constant="80" id="KFQ-33-f2e"/>
+                                    <constraint firstAttribute="trailing" secondItem="n9M-Bw-cXL" secondAttribute="trailing" constant="7" id="OcZ-2B-AWm"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IwM-hg-59S">
+                                <rect key="frame" x="0.0" y="155" width="393" height="617"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ocy-pc-Vdg">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="62B-Qh-lUq" firstAttribute="top" secondItem="IwM-hg-59S" secondAttribute="bottom" id="4vX-Wa-twM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IwM-hg-59S" secondAttribute="trailing" id="Gh0-fb-08f"/>
+                            <constraint firstItem="62B-Qh-lUq" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="UhE-kY-OH3"/>
+                            <constraint firstItem="62B-Qh-lUq" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="V3G-lm-Xel"/>
+                            <constraint firstItem="IwM-hg-59S" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lBw-Nf-yhq"/>
+                            <constraint firstItem="IwM-hg-59S" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="lRu-ry-jg7"/>
+                            <constraint firstItem="62B-Qh-lUq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rl4-D3-SNQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uid-kW-Pxe"/>
+                    <connections>
+                        <outlet property="chatRoomCollectionView" destination="IwM-hg-59S" id="tvW-NX-Noi"/>
+                        <outlet property="customInputView" destination="62B-Qh-lUq" id="bhM-n0-UWX"/>
+                        <outlet property="inputTextField" destination="Ra5-HU-FVT" id="myQ-7K-14z"/>
+                        <outlet property="sendButton" destination="yg7-zd-b4t" id="WXf-AK-HdW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.44274809160299" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zkP-r0-oAY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f1Q-0X-hWY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="LfX-ca-fwX">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Sn5-Bn-eOi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcL-xU-biX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.forward.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

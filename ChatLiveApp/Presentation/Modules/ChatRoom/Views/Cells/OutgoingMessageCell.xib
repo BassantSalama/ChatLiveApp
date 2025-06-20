@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OutgoingMessageCell" customModule="ChatLiveApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OutgoingMessageCell" id="gTV-IL-0wX" customClass="OutgoingMessageCell" customModule="ChatLiveApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="582" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="582" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="right" translatesAutoresizingMaskIntoConstraints="NO" id="yoW-AI-Q2c">
+                        <rect key="frame" x="0.0" y="0.0" width="582" height="50"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJk-CE-qoP">
+                                <rect key="frame" x="8" y="8" width="566" height="34"/>
+                                <color key="backgroundColor" red="0.20643889630000001" green="0.61154751129999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20643889630000001" green="0.61154751129999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fJk-CE-qoP" firstAttribute="top" secondItem="yoW-AI-Q2c" secondAttribute="top" constant="8" id="8qw-k7-W4E"/>
+                            <constraint firstItem="fJk-CE-qoP" firstAttribute="leading" secondItem="yoW-AI-Q2c" secondAttribute="leading" constant="8" id="ASv-Ec-xgT"/>
+                            <constraint firstAttribute="bottom" secondItem="fJk-CE-qoP" secondAttribute="bottom" constant="8" id="Okk-1x-m7z"/>
+                            <constraint firstAttribute="trailing" secondItem="fJk-CE-qoP" secondAttribute="trailing" constant="8" id="fhg-rV-jSZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="yoW-AI-Q2c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NNP-uR-A0x"/>
+                <constraint firstAttribute="bottom" secondItem="yoW-AI-Q2c" secondAttribute="bottom" id="NeK-xx-JqL"/>
+                <constraint firstItem="yoW-AI-Q2c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WOq-Fe-Tja"/>
+                <constraint firstAttribute="trailing" secondItem="yoW-AI-Q2c" secondAttribute="trailing" id="cQZ-jW-KUu"/>
+            </constraints>
+            <size key="customSize" width="582" height="50"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="outgoinMessageView" destination="yoW-AI-Q2c" id="wJt-1W-68F"/>
+                <outlet property="outgoingMessage" destination="fJk-CE-qoP" id="DrX-0H-BxD"/>
+            </connections>
+            <point key="canvasLocation" x="508.39694656488547" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+</document>
