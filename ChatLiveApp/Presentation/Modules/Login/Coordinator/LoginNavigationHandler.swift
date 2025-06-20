@@ -3,6 +3,16 @@ import UIKit
 
 class LoginNavigationHandler: LoginNavigating {
     
+    func navigateToMainTabBar(from viewController: UIViewController) {
+        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+        guard let tabBarController = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? MainTabBarController
+        else {
+            return
+        }
+        tabBarController.modalPresentationStyle = .fullScreen
+        viewController.present(tabBarController, animated: true, completion: nil)
+    }
+    
     func navigateToRegister(from viewController: UIViewController) {
         let storyboard = UIStoryboard(name: "Register", bundle: nil)
         guard let registerVC = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController else {
@@ -18,13 +28,4 @@ class LoginNavigationHandler: LoginNavigating {
         }
         viewController.navigationController?.pushViewController(forgotVC, animated: true)
     }
-    
-    func navigateToChats(from viewController: UIViewController) {
-        let storyboard = UIStoryboard(name: "Chats", bundle: nil)
-        guard let chatsVC = storyboard.instantiateViewController(withIdentifier: "ChatsViewController") as? ChatsViewController else {
-            return
-        }
-        viewController.navigationController?.pushViewController(chatsVC, animated: true)
-    }
-    
 }

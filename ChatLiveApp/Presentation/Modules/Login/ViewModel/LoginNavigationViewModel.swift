@@ -16,7 +16,8 @@ class LoginNavigationViewModel {
     }
     
     func didTapSignInButton(from viewController: UIViewController){
-        navigator.navigateToChats(from: viewController)
+        print("🔁 Navigating to MainTabBar...")
+        navigator.navigateToMainTabBar(from: viewController)
         
     }
 }
