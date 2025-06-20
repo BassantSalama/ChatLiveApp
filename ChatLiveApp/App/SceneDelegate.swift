@@ -18,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
        let storyboard = UIStoryboard(name: "Login", bundle: nil)
            let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
 
+
            let navigationController = UINavigationController(rootViewController: loginVC)
 
            let window = UIWindow(windowScene: windowScene)
@@ -25,7 +26,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
            self.window = window
            window.makeKeyAndVisible()
 
-       }
+
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+
+        let window = UIWindow(windowScene: windowScene)
+        window.rootViewController = loginVC
+        self.window = window
+        window.makeKeyAndVisible()
+
+    }
+
+       
 
     
     func sceneDidDisconnect(_ scene: UIScene) {
