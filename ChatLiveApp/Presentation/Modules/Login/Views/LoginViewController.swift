@@ -3,14 +3,18 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+
     @IBOutlet weak var loginScrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
+
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
+
     @IBOutlet weak var forgetPasswordLabel: UILabel!
+
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var newUserLabel: UILabel!
     
@@ -69,4 +73,5 @@ class LoginViewController: UIViewController {
         navigationViewModel.didTapForgotPassword(from: self)
     }
     
+
 }
