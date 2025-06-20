@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyF-zF-tUV">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyF-zF-tUV" userLabel="Register Scroll View">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8A3-2W-6J4" userLabel="Content View">
@@ -187,7 +187,9 @@
                         <outlet property="passwordLabel" destination="3gN-jd-wUB" id="Y66-Ni-BQX"/>
                         <outlet property="passwordTextField" destination="QCB-hV-Iph" id="E0r-My-ak6"/>
                         <outlet property="registerButton" destination="goy-el-Vnj" id="ex6-WI-VLH"/>
+                        <outlet property="registerContentView" destination="8A3-2W-6J4" id="Vak-TD-Rf1"/>
                         <outlet property="registerLabel" destination="3G8-UC-Bbw" id="zNe-id-Gsz"/>
+                        <outlet property="registerScrollView" destination="vyF-zF-tUV" id="5hq-VN-bs7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OE-2I-KJB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

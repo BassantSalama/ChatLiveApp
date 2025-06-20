@@ -18,6 +18,7 @@ class ForgotPasswordViewController: UIViewController {
         super.viewDidLoad()
         setupBindings()
         setupSignInTap()
+        observeKeyboard(for: forgotPasswordScrollView)
     }
     
     func setupBindings() {

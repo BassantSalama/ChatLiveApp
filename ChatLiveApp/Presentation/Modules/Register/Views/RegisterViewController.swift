@@ -22,6 +22,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         setupBindings()
         setupHaveAccountTap()
+        observeKeyboard(for: registerScrollView)
     }
     
     func setupBindings() {
