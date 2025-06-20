@@ -12,7 +12,7 @@ class IncomingMessageCell: UICollectionViewCell {
     }
     
     func configure(with message: String) {
-       incomingMessageLabel.text = message
-        }
-
+        incomingMessageLabel.text = message
+    }
+    
 }

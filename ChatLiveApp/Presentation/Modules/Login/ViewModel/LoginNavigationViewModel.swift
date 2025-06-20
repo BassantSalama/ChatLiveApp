@@ -10,7 +10,7 @@ class LoginNavigationViewModel {
     func didTapCreateAccount(from viewController: UIViewController) {
         navigator.navigateToRegister(from: viewController)
     }
-
+    
     func didTapForgotPassword(from viewController: UIViewController) {
         navigator.navigateToForgotPassword(from: viewController)
     }
