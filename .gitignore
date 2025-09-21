@@ -40,9 +40,6 @@ GoogleService-Info.plist
 *.tmp
 *.temp
 
-# Git
-.git/
-
 # Symbolic links
 *.orig
 
